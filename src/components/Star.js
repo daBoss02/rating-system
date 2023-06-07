@@ -2,9 +2,7 @@ import { FaStar } from "react-icons/fa";
 
 function Star(props) {
   return (
-    <div className="star">
-      <FaStar className="yellowStar" onClick={props.select}/>
-    </div>
+    <FaStar className={`${props.class} star`} id={props.id} onClick={props.clickHandler}/>
   )
 }
 

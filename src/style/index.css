@@ -1,20 +1,15 @@
 @import './reset.css';
 
 :root {
-  --app-dark:          #070423                   ;
-  --app-header-color:  #dd5730                   ;
+  --app-dark:          #1A1924                   ;
   --app-light:         #f7f7f7                   ;
-  --app-footer-color:  #b2b2b2                   ;
-  --app-dark-text:     #303030                   ;
-  --app-blue:          #408dff                   ;
-  --app-blue-hover:    #397bde                   ;
-
-  --app-header-height: 70px                        ;
-  --app-footer-height: 112px                       ;
-  --app-border-radius: 6px                         ;
+  --app-gray:          #53535C                   ;
+  --app-yellow:        #FFDB13                   ;
+  --app-blue:          #0F71FF                   ;
+  --app-blue-hover:    #1265e2                   ;
 }
 
-body { background-color: #070423;}
+body { background-color: var(--app-dark)}
 .container {
   width:               min(100% - 30px, 1280px)    ;
   margin-inline:       auto                        ;
@@ -25,3 +20,89 @@ body { background-color: #070423;}
   flex-wrap: wrap;
 }
 
+.yellow {
+  color: var(--app-yellow);
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.ratingBox {
+  width: 100%;
+  text-align: center;
+}
+
+.star {
+  transition: all ease-in-out 0.15s;
+}
+
+.stars {
+  color: var(--app-gray);
+  justify-content: center;
+  gap: 5px;
+  font-size: 40px;
+}
+
+.descr {
+  margin-top: 10px;
+  color: var(--app-light);
+  transition: ease-in all 0.25s;
+}
+
+.openDialog {
+  background-color: var(--app-blue);
+  padding: 15px;
+  color: var(--app-light);
+  letter-spacing: 0.1px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 20vh;
+  margin-top: -10vh;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--app-gray);
+  color: var(--app-light);
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.416);
+  letter-spacing: 0.5px;
+}
+
+dialog h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+dialog p {
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+dialog button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: var(--app-blue);
+  color: var(--app-light);
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.416);
+}
+
+button:hover {
+  background-color: var(--app-blue-hover);
+}
