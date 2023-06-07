@@ -14,8 +14,7 @@
   --app-border-radius: 6px                         ;
 }
 
-body { background-color: var(--app-dark);}
-
+body { background-color: #070423;}
 .container {
   width:               min(100% - 30px, 1280px)    ;
   margin-inline:       auto                        ;
