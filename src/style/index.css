@@ -38,6 +38,10 @@ main {
   transition: all ease-in-out 0.15s;
 }
 
+.star:hover {
+  cursor: pointer;
+}
+
 .stars {
   color: var(--app-gray);
   justify-content: center;
