@@ -1,0 +1,28 @@
+@import './reset.css';
+
+:root {
+  --app-dark:          #070423                   ;
+  --app-header-color:  #dd5730                   ;
+  --app-light:         #f7f7f7                   ;
+  --app-footer-color:  #b2b2b2                   ;
+  --app-dark-text:     #303030                   ;
+  --app-blue:          #408dff                   ;
+  --app-blue-hover:    #397bde                   ;
+
+  --app-header-height: 70px                        ;
+  --app-footer-height: 112px                       ;
+  --app-border-radius: 6px                         ;
+}
+
+body { background-color: var(--app-dark);}
+
+.container {
+  width:               min(100% - 30px, 1280px)    ;
+  margin-inline:       auto                        ;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
